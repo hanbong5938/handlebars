@@ -1,4 +1,5 @@
 /**
  * @param {string} id 타겟 id
+ * @param event 이벤트
  */
-const globalClick = (id) => document.getElementById(id).addEventListener("click", () => alert("Hello World!"))
+const addClickEvent = (id, event) => document.getElementById(id).addEventListener("click", event)

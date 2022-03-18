@@ -5,5 +5,5 @@ const loadTemplate = async (name, targetName, replace = false) => {
     const target = document.getElementById(targetName)
     const compile = template(element.data);
     replace ? target.innerHTML = compile : target.innerHTML += compile
-    globalClick(name)
+    addClickEvent(name, element.func)
 }

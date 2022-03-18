@@ -1,0 +1,1 @@
+const alertHello = () => alert("hello!!!")

@@ -5,7 +5,7 @@ const json = {
             id: "test",
             text: "button!"
         },
-        func: alertHello,
+        func: board.alertHello,
     },
     test2: {
         url: "/component/button.hbs",
@@ -13,6 +13,6 @@ const json = {
             id: "test2",
             text: "button2!!!"
         },
-        func: alertHello,
+        func: board.alertBye,
     }
 }

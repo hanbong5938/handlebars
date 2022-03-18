@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Handlebars Demo</title>
+</head>
+<body>
+<div id="container"></div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/javascript/global.js"></script>
+<script src="/data/element.js"></script>
+<script>
+    window.onload = () => loadTemplate('test', 'container')
+
+    const loadTemplate = async (name, targetName, replace = false) => {
+        const element = json[name]
+        const {data} = await axios.get(element.url)
+        const template = Handlebars.compile(data)
+        const target = document.getElementById(targetName)
+        const compile = template(element.data);
+        replace ? target.innerHTML = compile : target.innerHTML += compile
+        globalClick("test")
+    }
+</script>
+</html>

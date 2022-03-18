@@ -4,13 +4,13 @@ const json = {
         data: {
             text: "button!"
         },
-        func: boardApi.alertHello,
+        func: alertHello,
     },
     test2: {
         url: "/component/button.hbs",
         data: {
             text: "button2!!!"
         },
-        func: boardApi.alertBye,
+        func: alertHello,
     }
 }

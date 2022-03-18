@@ -1,1 +1,4 @@
-const alertHello = () => alert("hello!!!")
+const boardApi = {
+    alertHello: () => alert("hello!!!"),
+    alertBye: () => alert("bye!!!")
+}

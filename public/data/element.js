@@ -4,6 +4,6 @@ const json = {
         data: {
             text: "button!"
         },
-        func: alertHello,
+        func: boardApi.alertHello,
     }
 }

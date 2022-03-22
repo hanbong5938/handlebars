@@ -1,1 +1,4 @@
-const alertHello = () => alert("hello!!!")
+const board = {
+    alertHello: () => alert("hello!!!"),
+    alertBye: () => alert("Bye!!!")
+}
